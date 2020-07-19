@@ -1,0 +1,150 @@
+.header {
+	background-color: $orange;
+	padding: 77px 0 0 0;
+//	transition: all 1s;
+//	position:fixed;
+
+	&--flex {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__nav {
+		display: flex;
+		justify-content: flex-end;
+		list-style-type: none;
+		flex-wrap: wrap;
+	}
+}
+.nav__item{
+	text-decoration: none;
+	display: inline-block;
+	position: relative;
+	color: $grey;
+	@include robbol;
+	text-transform: uppercase;
+	font-size: $small;
+	padding-right: calc(35px/2);
+	padding-left: calc(35px/2);
+	&--right{
+		text-align: center;
+		position: relative;
+	}
+	&--nopadding{
+		padding-right: 0;
+	}
+	&:hover{
+		color:$red;
+	}
+}
+
+.logo {
+	text-transform: uppercase;
+	white-space: nowrap;
+	@include robblack;
+	font-size: $big;
+	&__first{
+		display: inline-block;
+		color: $white;
+		border:3px solid $yellow;
+		padding: 6px 10px;
+	}
+}
+
+.header--fix{
+	padding: 15px 0;
+	z-index:10;
+	position: fixed;
+}
+
+.burger__icon{
+	display: none;
+    width: 45px;
+    height: 35px;
+    position: relative;
+    cursor: pointer;
+}
+.burger__icon span{
+	  display: block;
+    position: absolute;
+    height: 9px;
+    width: 100%;
+    background: $grey;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+.burger__icon span:nth-child(1) {
+    top: 0px;
+}
+
+.burger__icon span:nth-child(2), .burger__icon span:nth-child(3) {
+    top: 13px;
+}
+
+.burger__icon span:nth-child(4) {
+    top: 26px;
+}
+
+.burger__open{
+	& span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+	&  span:nth-child(2) {
+    transform: rotate(45deg);
+}
+ &  span:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+ &  span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+
+}
+}
+
+ @media (min-width: 760px) and (max-width: 1024px) and (orientation: landscape) { 
+	 .nav__item:not([href*=tel]){
+		 margin-TOP: 20px;
+	 }
+  }
+@media (min-width: 720px) and (max-width: 767px) {
+	 .nav__item:not([href*=tel]){
+		 margin-TOP: 20px;
+	 }
+}
+
+@media (min-width: 320px) and (max-width: 720px) {
+ .burger__icon{
+    display: inline-block;
+  }
+  
+  .header__nav {
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin-top: 120px;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    overflow: auto;
+  }
+  
+  .nav__item {
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+    color: #ffffff;
+  }
+}
+	
+	.burger__open{
+		display: block;
+	}

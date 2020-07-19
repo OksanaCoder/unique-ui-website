@@ -1,0 +1,1 @@
+$(document).ready(function(){function n(n){var i=$(window).scrollTop(),t=i+$(window).height(),a=$(n).offset().top;return a+$(n).height()<=t&&i<=a}$(window).scroll(function(){$(".scroll-animations .animated").each(function(){!0===n(this)&&$(this).addClass("fadeInLeft")}),$(".scroll-animations .animated-right").each(function(){!0===n(this)&&$(this).addClass("fadeInRight")})})});

@@ -1,0 +1,265 @@
+//подчеркивание
+.hov__bottomline:hover::after {
+	content: " ";
+	width: 100%;
+	height: 2px;
+	background: $yellow;
+	position: absolute;
+	bottom: 2px;
+	left: 0;
+	z-index: 5;
+	display: inline-block;
+}
+
+//анимация первой части logo - вторая рамка
+.hov__logo--first {
+	position: relative;
+	transition: .7s;
+}
+
+.hov__logo--first::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	border: 3px solid rgba(0, 0, 0, 0);
+	transition: .4s cubic-bezier(.1, .9, .9, 1.5);
+}
+
+.logo:hover .hov__logo--first::after {
+	border-color: $yellow;
+	width: calc(100% - 14px);
+	height: calc(100% + 14px);
+}
+
+//анимацяи второй части logo - поворот на 90 градусов
+.hov__logo--second {
+	display: inline-block;
+	transition: .5s;
+}
+
+.logo:hover .hov__logo--second {
+	transform: rotate(-90deg) translateY(-20px);
+	transition: .7s;
+
+}
+
+//появляющаяся рамка для кнпок
+//1. Навигация 
+.hov__nav--outline:before,
+.hov__nav--outline:after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	opacity: 0;
+	box-sizing: border-box;
+}
+
+.hov__nav--outline:before {
+	bottom: 5px;
+	left: 0;
+	border-left: 1px solid $yellow;
+	border-top: 1px solid $yellow;
+	transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+}
+
+.hov__nav--outline:after {
+	top: 5px;
+	right: 0;
+	border-right: 1px solid $yellow;
+	border-bottom: 1px solid $yellow;
+	transition: 0s ease opacity .4s, .2s ease width, .2s ease height .2s;
+}
+
+.hov__nav--outline:hover:before,
+.hov__nav--outline:hover:after {
+	height: 100%;
+	width: 100%;
+	opacity: 1;
+}
+
+.hov__nav--outline:hover:before {
+	transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
+}
+
+.hov__nav--outline:hover:after {
+	transition: 0s ease opacity .4s, .2s ease height .4s, .2s ease width .6s;
+}
+
+// 2. welcone
+.hov-outline:before,
+.hov-outline:after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	opacity: 0;
+	box-sizing: border-box;
+}
+
+.hov-outline:before {
+	bottom: 0;
+	left: 0;
+	border-left: 1px solid white;
+	border-top: 1px solid white;
+	transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+}
+
+.hov-outline:after {
+	top: 0;
+	right: 0;
+	border-right: 1px solid $white;
+	border-bottom: 1px solid $white;
+	transition: 0s ease opacity .4s, .2s ease width, .2s ease height .2s;
+}
+
+.hov-outline:hover:before,
+.hov-outline:hover:after {
+	height: 100%;
+	width: 100%;
+	opacity: 1;
+}
+
+.hov-outline:hover:before {
+	transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
+}
+
+.hov-outline:hover:after {
+	transition: 0s ease opacity .4s, .2s ease height .4s, .2s ease width .6s;
+}
+
+.hov-outline:hover {
+	background: rgba(255, 255, 255, .2);
+}
+
+// бульбашки
+.hov-up:hover {
+	animation: stripes 2s infinite linear;
+	background: linear-gradient(45deg,#ffc038 10%,#fcfcfc 18%,#fcfcfc 21%,#ffc038 47%,#FFC038 88%,#fcfcfc 75%,#fcfcfc 100%);
+	background-size: 10px 10px;
+	color: #000;
+}
+@keyframes stripes {
+	0% {
+		background-position: 0 0;
+	}
+	100% {
+		background-position: 50px 0;
+	}
+}
+
+.hov-right {
+	position: relative;
+	overflow: hidden;
+	z-index: 5;
+	span,
+	i {
+		position: relative;
+		z-index: 5;
+
+	}
+}
+
+.hov-right:before,
+.hov-right:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+
+}
+
+.hov-right:before {
+	transform: translateX(-100%);
+	background: $grey;
+	transition: transform .3s cubic-bezier(.55, .055, .675, .19);
+}
+
+.hov-right:after {
+	color: $white;
+	transform: translateX(100%);
+	transition: transform .3s cubic-bezier(.16, .73, .58, .62) .3s;
+	content:"HIRE US!";
+	top:30%;
+}
+
+.hov-right:hover:before,
+.hov-right:hover:after {
+	transform: translateX(0);
+}
+
+
+.hov-social{
+	
+}
+
+
+
+.swing:hover {
+	animation: swing ease-in-out 1s infinite alternate;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+@keyframes swing {
+	0% {
+		transform: rotate(3deg);
+	}
+	100% {
+		transform: rotate(-3deg);
+	}
+}
+
+.social__buttons:hover{
+	background: $grey;
+}
+
+.hov__soc--outline:before,
+.hov__soc--outline:after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	opacity: 0;
+	box-sizing: border-box;
+}
+
+.hov__soc--outline:before {
+	bottom: 0;
+	left: 0;
+	border-left: 1px solid $yellow;
+	border-top: 1px solid $yellow;
+	transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+}
+
+.hov__soc--outline:after {
+	top: 0;
+	right: 0;
+	border-right: 1px solid $yellow;
+	border-bottom: 1px solid $yellow;
+	transition: 0s ease opacity .4s, .2s ease width, .2s ease height .2s;
+}
+
+.hov__soc--outline:hover:before,
+.hov__soc--outline:hover:after {
+	height: 100%;
+	width: 100%;
+	opacity: 1;
+}
+
+.hov__soc--outline:hover:before {
+	transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
+}
+
+.hov__soc--outline:hover:after {
+	transition: 0s ease opacity .4s, .2s ease height .4s, .2s ease width .6s;
+}

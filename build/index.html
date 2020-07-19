@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Crazy octopus</title>
+	<meta name="description" content="Hello from CrazyOctopuses">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"
+  integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
+  crossorigin="anonymous">
+  
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+  integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
+  crossorigin="anonymous">
+
+
+
+   <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/blazy/latest/blazy.min.js"></script>
+ -->
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+
+  <header class="header" id="header">
+	<div class="content_wrapper header--flex">
+		<div class="logo"><span class="logo__first hov__logo--first">unique</span> <span class="hov__logo--second">tech</span></div>
+		<nav>
+			<ul class='header__nav' id="nav">
+				<li><a href="#" class="nav__item hov__nav--outline">home</a></li>
+				<li><a href="#" class="nav__item hov__nav--outline">services</a></li>
+				<li><a href="#" class="nav__item hov__nav--outline">about</a></li>
+				<li><a href="#" class="nav__item hov__nav--outline">portfolio</a></li>
+				<li><a href="#" class="nav__item hov__nav--outline">academic</a></li>
+				<li><a href="#" class="nav__item hov__nav--outline">blog</a></li>
+			<li class="nav__item--right"><a href="#" class="nav__item nav__item--nopadding">contact us</a><br/>
+					<a  class="nav__item nav__item--nopadding" href='tel:#'>(+966-322 322)</a></li>
+			</ul>
+			<div class="burger__icon" id="burger">
+				<span class="none"></span>
+				<span></span>
+				<span></span>
+				<span class="none"></span>
+			</div>
+		</nav>
+		</div>
+	</header>
+	<script>
+function openBurger() {
+	document.getElementById('nav').classList.toggle("burger__open");	
+	document.getElementById('burger').classList.toggle("burger__open");	
+}
+document.getElementById('burger').onclick = openBurger;
+	</script>	
+
+  <section class="welcome" id="welcome">
+	<div class="content_wrapper welcome--flex welcome--center">
+		<div class="welcome__content">
+			<h2 class="welcome__header animated fadeInDown">Unique-tech<br> app development</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.</p>
+			<a class="btn btn__welcome hov-outline">View More <i class="fas fa-paper-plane"></i></a>
+
+	</div>
+		<div class="slideshow-container">
+			<div class="mySlides fade">
+				<img src="images/laptop.png" class="welcome__img" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="images/tablet.png" class="welcome__img" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="images/iphones.png" class="welcome__img" style="width:100%">
+			</div>
+			<div style="text-align:center">
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
+			</div>
+		</div>
+		<div id="modal-container">
+  				<div class="modal-background">
+   				 <div class="modal">
+   					   <h2>I'm a Modal</h2>
+      					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, rem minus eveniet rerum hic consectetur fugiat dolorem temporibus autem impedit explicabo eius dolore libero, nihil. Inventore soluta ipsa repellendus, itaque.</p>
+     				 <svg class="modal-svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none">
+					<rect x="0" y="0" fill="none" width="226" height="162" rx="3" ry="3"></rect>
+					</svg>
+			    </div>
+			  </div>
+			</div>
+	</div>
+</section>
+<script type="text/javascript">
+	$('.btn__welcome').click(function(){
+	  var buttonId = $(this).attr('id');
+	  $('#modal-container').removeAttr('class').addClass('two');
+	  $('body').addClass('modal-active');
+	})
+
+	$('#modal-container').click(function(){
+	  $(this).addClass('out');
+	  $('body').removeClass('modal-active');
+	});
+</script>
+	
+	<section class="services">
+	<div class="content_wrapper">
+		<div class="center services__title">
+			<h2 class="btn btn--grey btn--grey__h2base relative plane--right">
+				<span>What we do</span>
+<!--
+				<div class="line-send">
+					<img src="images/png/send-line.png" alt="">
+				</div>
+-->
+			</h2>
+		</div>
+			<!-- First Item -->
+		<div class="services__content scroll-animations">
+			<div class="services__img animated">
+				<div class="relative">
+					<img src="images/png/services-laptop.png" alt="" class="services__img-relative">
+				</div>
+			</div>
+			<div class="services__content-text">
+				<h3>Web Design</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.</p>
+				<a href="#" class="btn btn--orange hov-up">View more</a>
+			</div>
+		</div>
+       	<!-- Second Item --> 
+		<div class="services__content scroll-animations">
+			<div class="services__content-text animated">
+				<h3>Web Design</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.</p>
+				<a href="#" class="btn btn--orange hov-up">View more</a>
+			</div>
+			<div class="services__img">
+				<div class="relative">
+					<img src="images/png/services-laptop.png" alt="" class="services__img-relative">
+				</div>
+			</div>
+		</div>
+		
+		<!-- Third Item -->
+		<div class="services__content scroll-animations">
+			<div class="services__img animated">
+				<div class="relative">
+					<img src="images/png/services-laptop.png" alt="" class="services__img-relative">
+				</div>
+			</div>
+			<div class="services__content-text animated-right">
+				<h3>Web Design</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.</p>
+				<a href="#" class="btn btn--orange hov-up">View more</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+	
+	<section class="process" id="process">
+	<div class="content_wrapper">
+		<div class="flex__col">
+			<h2 class="btn btn--grey btn--grey__h2base plane plane--left">how we work</h2>	
+		</div>
+		<div class="process__container">
+			<div class="process__map">
+				<img src="images/svg/process/map.svg" alt="" width="100%" height="100%">
+			</div>
+			<div class="pc-show">
+				<div class="process__row">
+					<div class="process__item process__start">
+						<img src="images/svg/process/start.svg" alt="" width="175px" height="210px" class="process__start-svg">
+						<img src="images/svg/process/line1.svg" alt="" width="50px" height="5px" class="process__line1">
+					</div>
+					<div class="process__item process__idea">
+						<img src="images/svg/process/great-idea.svg" alt="" width="100px" height="100px" class="process__idea-svg">
+						<img src="images/svg/process/line2.svg" alt="" width="60px" height="5px" class="process__line2">
+					</div>
+					<div class="process__item process__tellus">
+						<img src="images/svg/process/tellus.svg" alt="" width="285px" height="215px" class="process__tellus-svg">
+						<img src="images/svg/process/line3.svg" alt="" width="65px" height="60px" class="process__line3">
+					</div>
+					<div class="process__item process__contactus">
+						<img src="images/svg/process/contactus.svg" alt="" width="90px" height="65px" class="process__contactus-svg">
+					</div>
+				</div>
+				<div class="process__row mb-30">
+					<div class="process__item process__people">
+						<img src="images/svg/process/people.svg" alt="" width="290px" height="155px" class="process__people-svg">
+						<img src="images/svg/process/line4.svg" alt="" width="125px" height="5px" class="process__line4">
+					</div>
+					<div class="process__item process__wewill">
+						<img src="images/svg/process/wewill.svg" alt="" width="80px" height="80px" class="process__wewill-svg">
+						<img src="images/svg/process/line5.svg" alt="" width="125px" height="5px" class="process__line5">
+					</div>
+					<div class="process__item process__deal">
+						<img src="images/svg/process/deal.svg" alt="" width="220px" height="170px" class="process__deal-svg">
+					</div>
+				</div>
+				<div class="process__row mb-10">
+					<div class="process__item process__work">
+						<img src="images/svg/process/line6.svg" alt="" width="5px" height="55px" class="process__line6">
+						<img src="images/svg/process/work.svg" alt="" width="80px" height="155px" class="process__work-svg">
+					</div>
+					<div class="process__item process__present">
+						<img src="images/svg/process/line4.svg" alt="" width="135px" height="5px" class="process__line7">
+						<img src="images/svg/process/present.svg" alt="" width="185px" height="90px" class="process__present-svg">
+						<img src="images/svg/process/line8.svg" alt="" width="135px" height="5px" class="process__line8">
+					</div>
+					<div class="process__item process__list">
+						<img src="images/svg/process/list.svg" alt="" width="190px" height="125px" class="process__list-svg">
+						<img src="images/svg/process/line9.svg" alt="" width="5px" height="60px" class="process__line9">
+					</div>
+				</div>
+				<div class="process__row">
+					<div class="process__item process__finish">
+						<img src="images/svg/process/finish.svg" alt="" width="230px" height="200px" class="process__finish-svg">
+					</div>
+					<div class="process__item process__final">
+						<img src="images/svg/process/line10.svg" alt="" width="145" height="5px" class="process__line10">
+						<img src="images/svg/process/final.svg" alt="" width="110px" height="110px" class="process__final-svg">
+					</div>
+				</div>
+			</div>
+			<div class="mobile-show">
+				<img src="images/process/process_mobile.gif" alt="">
+			</div>
+		</div>
+	</div>
+	</section>
+	
+	<section class="features">
+	<div class="content_wrapper flex__col">
+		<h3 class="btn btn--grey btn--grey__h2base margin__h2 plane plane--right">our features</h3>
+
+		<div class="features__row">
+			<div class="features__active features__box">
+				<img src="images/svg/features/notes27.svg" alt="image description" width="27" height="30">
+				<h3>Visual Composer</h3>
+				<p class="vis">TheFox comes with the Visual Composer Plugin. You won’t need to code or to remember any shortcodes with our. </p>
+			</div>
+			<div class="features__box">
+				<img src="images/svg/features/lcd2.svg" alt="image description" width="27" height="30">
+				<h3>Responsive</h3>
+				<p class="vis">TheFox comes with the Visual Composer Plugin. You won’t need to code or to remember any shortcodes with our. </p>
+			</div>
+			<div class="features__box">
+				<img src="images/svg/features/notebook79.svg" alt="image description" width="27" height="30">
+				<h3>Retina Ready</h3>
+				<p  class="vis">TheFox comes with the Visual Composer Plugin. You won’t need to code or to remember any shortcodes with our. </p>
+			</div>
+			<div class="features__box">
+				<img src="images/svg/features/pencil124.svg" alt="image description" width="27" height="30">
+				<h3>Typography</h3>
+				<p  class="vis">TheFox comes with the Visual Composer Plugin. You won’t need to code or to remember any shortcodes with our. </p>
+			</div>
+			<div class="features__box">
+
+				<img src="images/svg/features/wallet35.svg" alt="image description" width="27" height="30">
+				<h3>Theme Options Pannel</h3>
+				<p  class="vis">TheFox comes with the Visual Composer Plugin. You won’t need to code or to remember any shortcodes with our. </p>
+			</div>
+			<div class="features__box">
+				<img src="images/svg/features/hand224.svg" alt="image description" width="27" height="30">
+				<h3>Dummy Content</h3>
+				<p  class="vis">TheFox comes with the Visual Composer Plugin. You won’t need to code or to remember any shortcodes with our. </p>
+			</div>
+			<div class="features__box">
+				<img src="images/svg/features/globe32.svg" alt="image description" width="27" height="30">
+				<h3>Many Style Available</h3>
+				<p  class="vis">TheFox comes with the Visual Composer Plugin. You won’t need to code or to remember any shortcodes with our. </p>
+			</div>
+			<div class="features__box">
+				<img src="images/svg/features/cropping4.svg" alt="image description" width="27" height="30">
+				<h3>Header Style</h3>
+				<p  class="vis">TheFox comes with the Visual Composer Plugin. You won’t need to code or to remember any shortcodes with our. </p>
+			</div>
+			<div class="features__box">
+				<img src="images/svg/features/bag45.svg" alt="image description" width="27" height="30">
+				<h3>10000+ icons</h3>
+				<p  class="vis">TheFox comes with the Visual Composer Plugin. You won’t need to code or to remember any shortcodes with our. </p>
+			</div>
+			<div class="features__box">
+				<img src="images/svg/features/dish7.svg" alt="image description" width="27" height="30">
+				<h3>Support</h3>
+				<p  class="vis">TheFox comes with the Visual Composer Plugin. You won’t need to code or to remember any shortcodes with our. </p>
+			</div>
+			<div class="features__box">
+				<img src="images/svg/features/wealth.svg" alt="image description" width="27" height="30">
+				<h3>Update</h3>
+				<p  class="vis">TheFox comes with the Visual Composer Plugin. You won’t need to code or to remember any shortcodes with our. </p>
+			</div>
+			<div class="features__box">
+				<img src="images/svg/features/soft4.svg" alt="image description" width="27" height="30">
+				<h3>SEO Ready</h3>
+				<p  class="vis">TheFox comes with the Visual Composer Plugin. You won’t need to code or to remember any shortcodes with our. </p>
+			</div>
+		</div>
+	</div>
+</section>
+
+	
+	<section class="packages">
+	<div class="content_wrapper flex__col">
+		<h2 class="btn btn--grey btn--grey__h2base plane plane--left">our packages</h2>
+		<div class="packages__content">
+			<div class="packages__column packages__col">
+				<div class="packages__cell packages__cell--noborder p__left--sm">
+					<h3 class="packages__h3 grey">Basic</h3>
+				</div>
+				<div class="packages__cell">5 web sites</div>
+				<div class="packages__cell">15 e-mails</div>
+				<div class="packages__cell">5 mySQL databases</div>
+				<div class="packages__cell">10 GB storage</div>
+				<div class="packages__cell packages__cell--noborder p__center--sm"><span class="packages__price grey">$5</span><span class="price__slash grey">/</span><span class="packages__price--small grey">mo.</span></div>
+				<div class="packages__cell packages__cell--noborder p__right--sm"><a href="#" class="btn packages__btn packages__btn--grey">order now</a></div>
+			</div>
+			<div class="packages__column packages__col packages__column--red" id="standard">
+				<div class="packages__cell packages__cell--noborder p__left--sm">
+					<h3 class="packages__h3 packages__h3--red">Standard</h3>
+				</div>
+				<div class="packages__cell">15 web sites</div>
+				<div class="packages__cell">40 e-mails</div>
+				<div class="packages__cell">20 mySQL databases</div>
+				<div class="packages__cell">50 GB storage</div>
+				<div class="packages__cell packages__cell--noborder packages__h3--red p__center--sm"><span class="packages__price red">$12</span><span class="price__slash red">/</span><span class="packages__price--small red">mo.</span></div>
+				<div class="packages__cell packages__cell--noborder p__right--sm"><a href="#" class="btn packages__btn packages__btn--red">order now</a></div>
+			</div>
+			<div class="packages__column packages__col packages__column--orange">
+				<div class="packages__cell packages__cell--noborder p__left--sm">
+					<h3 class="packages__h3 packages__h3--orange">Premium</h3>
+				</div>
+				<div class="packages__cell">30 web sites</div>
+				<div class="packages__cell">50 e-mails</div>
+				<div class="packages__cell">40 mySQL databases</div>
+				<div class="packages__cell">100 GB storage</div>
+				<div class="packages__cell packages__cell--noborder packages__h3--orange p__center--sm"><span class="packages__price orange">$19</span><span class="price__slash orange">/</span><span class="packages__price--small orange">mo.</span></div>
+				<div class="packages__cell packages__cell--noborder p__right--sm"><a href="#" class="btn packages__btn packages__btn--orange">order now</a></div>
+			</div>
+		</div>
+	</div>
+</section>
+	
+	<section class="history" id="history">
+	<div class="content_wrapper history__flex scroll-animations">
+		<div class="history--left animated"><img src="./images/png/history-bad.jpg" data-src="./images/png/our-history.png" class="history__img b-lazy"></div>
+		<div class="history__cont">
+			<h2 class="btn btn--grey btn--grey__h2history plane--left">our history</h2>
+			<p class="history__about">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.<br/>
+			Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatisquasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur.</p>
+			<a href="#" class="btn btn--orange btn--orange__long hov-up"><span>browse our story</span></a>
+		</div>
+	</div>
+</section>
+
+	
+	<section class="projects">
+
+	<div class="content_wrapper flex__col">
+		<h2 class="btn btn--grey btn--grey__h2long projects__margin plane plane--right">our buisness related projects</h2>
+
+		<div class="projects__row">
+			<div >
+			   <object data="your.svg" type="image/svg+xml">
+			     <img src="images/svg/technical_aid.svg" class="swing">
+			   </object>
+		     	<span class="descr">technical aid</span>
+			</div>
+			<div>
+			   <object data="your.svg" type="image/svg+xml">
+			     <img src="images/svg/secure_access.svg" class="swing">
+			   </object>
+		     	<span class="descr">secure access</span>
+			</div>
+			<div>
+			   <object data="your.svg" type="image/svg+xml">
+			     <img src="images/svg/market_research.svg" class="swing">
+			   </object>
+		     	<span class="descr">market research</span>
+			</div>
+			<div>
+			   <object data="your.svg" type="image/svg+xml">
+			     <img src="images/svg/credit.svg" class="swing">
+			   </object>
+		     	<span class="descr">credit</span>
+			</div>
+			<div>
+			   <object data="your.svg" type="image/svg+xml">
+			     <img src="images/svg/targetting.svg" class="swing">
+			   </object>
+		     	<span class="descr">targetting</span>
+			</div>
+			<div>
+			   <object data="your.svg" type="image/svg+xml">
+			     <img src="images/svg/insurance.svg" class="swing">
+			   </object>
+		     	<span class="descr">insurance</span>
+			</div>
+			<div>
+			   <object data="your.svg" type="image/svg+xml">
+			     <img src="images/svg/ecommerce.svg" class="swing">
+			   </object>
+		     	<span class="descr">ecomerce</span>
+			</div>
+			<div>
+			   <object data="your.svg" type="image/svg+xml">
+			     <img src="images/svg/office.svg" class="swing">
+			   </object>
+		     	<span class="descr">office</span>
+			</div>
+		</div>
+	</div>
+</section>
+	
+	<section class="team">
+	<div class="content_wrapper flex__col">
+		<h2 class="btn btn--grey btn--grey__h2long team__margin plane plane--left">our team members</h2>
+		<div class="team__container">
+			<figure class="team__members">
+				<img src="images/svg/member1.svg" alt="image description" width="130" height="127">
+				<figcaption>
+					<p>Syed Miraj</p>
+					<p>UI &#38; UX DESIGNER</p>
+				</figcaption>
+			</figure>
+			<figure class="team__members">
+				<img src="images/svg/member2.svg" alt="image description" width="130" height="127">
+				<figcaption>
+					<p>PENNY HUSTON</p>
+					<p>developer</p>
+				</figcaption>
+			</figure>
+			<figure class="team__members">
+				<img src="images/svg/member3.svg" alt="image description" width="130" height="127">
+				<figcaption>
+					<p>LENNERD SHELLY</p>
+					<p>reviewer</p>
+				</figcaption>
+			</figure>
+			<figure class="team__members">
+				<img src="images/svg/member4.svg" alt="image description" width="130" height="127">
+				<figcaption>
+					<p>SHELDON CUPPER</p>
+					<p>marketer</p>
+				</figcaption>
+			</figure>
+			<figure class="team__members">
+				<img src="images/svg/member5.svg" alt="image description" width="130" height="127">
+				<figcaption>
+					<p>ashley cole</p>
+					<p>managment</p>
+				</figcaption>
+			</figure>
+
+		</div>
+	</div>
+</section>
+
+	
+	<section class="support">
+	<div class="content_wrapper">
+		<div class="center support__title">
+			<h2 class="btn btn--grey support__btn relative plane plane--right">
+				<span>update &#38; support</span>
+			</h2>
+		</div>
+		<div class="support__content">
+			<div class="support__content-text">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				<br>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+				<a href="#" class="btn btn--orange btn--orange__long hov-up"><span>support center</span></a>
+			</div>
+			<div class="support__img">
+				<div class="relative">
+					<img src="images/png/support-laptop-media.png" alt="" class="support__img-media">
+					<img src="images/png/macbook-updates-support.png" alt="" class="support__img-relative">
+					<img src="images/png/support-macbook-screen.png" alt="" class="support__img-absolute">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+	
+		<section class="hire">
+		<div class="content_wrapper">
+			<div class="hire__img">
+				<div class="hire__img-bg"></div>
+			</div>
+			<div class="hire__action">
+				<div class="hire__action-text">
+					Need Creative Workers?
+				</div>
+				<a href="#" class="btn btn__hire hov-right">
+					Hire us
+				</a>
+			</div>
+		</div>
+	</section>
+	
+	<footer class="footer">
+		<div class="content_wrapper footer__padding">
+		<div class="footer__nav">
+			<div class="footer__item">
+				<h3 class="item__h3">portfolio</h3>
+				<ul class="item__list--padding">
+					<li><a href="#" class="item__a hov__bottomline">Web Design</a></li>
+					<li><a href="#" class="item__a hov__bottomline">Branding &#38; Identity</a></li>
+					<li><a href="#" class="item__a hov__bottomline">Mobile Design</a></li>
+					<li><a href="#" class="item__a hov__bottomline">Print</a></li>
+					<li><a href="#" class="item__a hov__bottomline">User Interface</a></li>
+				</ul>
+			</div>
+			<div class="footer__item">
+				<h3 class="item__h3">about</h3>
+				<ul class="item__list--padding">
+					<li><a href="#" class="item__a hov__bottomline">The Company</a></li>
+					<li><a href="#" class="item__a hov__bottomline">History</a></li>
+					<li><a href="#" class="item__a hov__bottomline">Vision</a></li>
+				</ul>
+			</div>
+			<div class="footer__item">
+				<h3 class="item__h3">gallery</h3>
+				<ul class="item__list--padding">
+					<li><a href="#" class="item__a hov__bottomline">Flickr</a></li>
+					<li><a href="#" class="item__a hov__bottomline">Picasa</a></li>
+					<li><a href="#" class="item__a hov__bottomline">iStokePhoto</a></li>
+					<li><a href="#" class="item__a hov__bottomline">PhotoDune</a></li>
+				</ul>
+			</div>
+			<div class="footer__item">
+				<h3 class="item__h3">contact</h3>
+				<ul class="item__list--padding">
+					<li><a href="#" class="item__a hov__bottomline">Basic Info</a></li>
+					<li><a href="#" class="item__a hov__bottomline">Map</a></li>
+					<li><a href="#" class="item__a hov__bottomline">Contact Form</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer__social">
+		 <a href="#" class="social__buttons hov__soc--outline">
+			 <i class="social__img fab fa-facebook-f"></i>
+</a>
+			<a href="#" class="social__buttons hov__soc--outline">
+				<i class="social__img fab fa-twitter"></i>
+</a>
+			<a href="#" class="social__buttons hov__soc--outline">
+			  <i class="social__img fab fa-google-plus-g"></i>
+</a>
+			<a href="#" class="social__buttons hov__soc--outline"> 
+			<i class="social__img fab fa-linkedin-in"></i>
+</a>
+		</div>
+		<div class="footer__copyright">
+			Copyright © 2015 Syed Miraj.All rights reserved.
+		</div>
+	</div>
+	
+	</footer>
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/blazy/latest/blazy.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/animate.js"> </script>
+     <script type="text/javascript">
+     	 var bLazy = new Blazy({
+        // Options
+    });
+     </script>
+     
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript" src="js/changeBackground.js"></script>
+</body>
+</html>

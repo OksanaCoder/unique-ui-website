@@ -1,0 +1,1 @@
+jQuery(document).ready(function(){jQuery(".welcome__content").addClass("visible").viewportChecker({classToAdd:"visible animated fadeInRight",offset:100})});

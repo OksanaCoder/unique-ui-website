@@ -1,0 +1,57 @@
+.projects{
+		padding: 150px;
+	&__margin{
+		margin-bottom: 135px;
+	}
+}
+
+.projects__row {
+	background: url('../images/project_background.png');
+    padding: 90px 100px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 45px 80px;
+	text-align: center;
+	align-items: end;
+        div {
+        	width: 100%;
+        	img {
+        		margin-bottom: 54px;
+        		align-self: start;
+        		width: 150px;
+        		height: 150px;
+        		padding: 10px;
+        	}
+       }
+
+		.descr {
+		text-transform: uppercase;
+		text-align: center;
+		@include robbol;
+			color: $grey;
+			font-size: $medium;
+	}
+}
+
+
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+	.projects__row {
+    grid-template-columns: 1fr 1fr;
+ }
+
+}
+@media (min-width: 481px) and (max-width: 767px) {
+ .projects__row {
+    grid-template-columns: 1fr 1fr;
+ }
+
+}
+
+ @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) { 
+  .projects__row {
+    grid-template-columns: 1fr 1fr;
+ }
+
+}

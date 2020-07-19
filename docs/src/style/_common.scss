@@ -1,0 +1,164 @@
+body{
+	font-size: 16px;
+}
+li{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+}
+  
+//Шрифты
+
+@mixin robbol {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+}
+
+@mixin roblight {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+@mixin robreg {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+
+@mixin robmed {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+}
+
+@mixin robthin {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+}
+
+@mixin robblack {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900;
+}
+
+@mixin opsreg {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+@mixin opsbold {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+}
+
+
+//Цвета
+
+//жклтый для logo
+$yellow: rgb(255, 242, 0);
+//основной оранжевый
+$orange: #ffc038;
+
+//основерй красный
+$red: #f26c4f;
+
+//серый для всего
+$grey: rgb(54, 54, 54);
+
+//светло-серый
+$lightgrey: rgb(165, 165, 165);
+
+//темно-серый для h3
+$darkgrey: rgb(36, 36, 36);
+
+//белый для всего
+$white: rgb(252, 252, 252);
+
+//градиент
+$grad: repeating-linear-gradient(-45deg,#f9f8f8,#f0efef 1px,#f0efef .07rem,#f9f8f8 calc(.07rem + 1px),#f9f8f8 .4rem) fixed;
+
+
+//Размеры
+//12px
+$mini: 0.75rem;
+//14px
+$small: 0.875rem;
+//мистический line-height
+$mystic: 0.775rem;
+//16px
+$medium: 1rem;
+
+//18px
+$h3: 1.125rem;
+
+//20px
+$twenty: 1.25rem;
+//25px
+
+//26px
+$big: 1.625rem;
+
+//42px
+$max: 2.625rem;
+.header,
+.welcome,
+.services,
+.process,
+.features,
+.packages,
+.history,
+.projects,
+.team,
+.support,
+.hire,
+.footer {
+	width: 100%;
+}
+
+.content_wrapper {
+	max-width: 1004px;
+	margin: 0 auto;
+}
+
+.flex__col{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+.svg--grad{
+	background: url(../images/svggrad.svg)!important;
+}
+
+.plane{
+	position: relative;
+	&--left::before{
+		content:' ';
+		height: 120px;
+		width:73px;
+		background-image: url('../images/png/plane.png');
+		background-repeat: no-repeat;
+    background-position: center; 
+		position: absolute;
+	left:-75px;
+	top:25px;
+	}
+		&--right::after{
+	  content:' ';
+		height: 120px;
+		width:73px;
+		background-image: url('../images/png/plane.png');
+		background-repeat: no-repeat;
+    background-position: center; 
+		position: absolute;
+	right:-75px;
+	top:25px;
+			transform:scaleX(-1);
+			}
+}
+
+.hidden{
+     opacity:0;
+}
+.visible{
+     opacity:1;
+}

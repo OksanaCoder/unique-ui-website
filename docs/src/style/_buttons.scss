@@ -1,0 +1,86 @@
+.btn {
+	display: inline-block;
+	@include robbol;
+	border-radius: 3px;
+	text-transform: uppercase;
+	text-align: center;
+	white-space: nowrap;
+	box-shadow: 1px 2px 4.75px 0.25px rgba(0, 0, 0, 0.25);
+
+	&__welcome {
+		@include robreg;
+		font-size: $medium;
+		background-color: $grey;
+		min-width: 150px;
+		border: none;
+		padding: 19px 42px 20px 25px;
+		text-align: left;
+		color: $white;
+		text-transform: capitalize;
+		margin-top: 35px;
+		position: relative;
+		line-height: $mystic;
+     
+		i {
+			font-size: 17px;
+			right: 19px;
+			top: 50%;
+			transform: translateY(-65%) rotate(50deg);
+			position: absolute;
+		}
+	}
+
+
+	&__hire {
+		@include opsbold;
+		font-size: $twenty;
+		padding: 15px 0 17px;
+		min-width: 160px;
+		color: $grey;
+		background-color: $white;
+		line-height: $medium;
+	}
+
+	&--grey {
+		background-color: $grey;
+		color: $white;
+		font-size: $big;
+		line-height: $mystic;
+		padding: 19px 0;
+		&__h2base {
+			min-width: 330px;
+		}
+		&__h2long {
+
+			min-width: 445px;
+			
+
+		}
+		&__h2history {
+			min-width: 220px;
+		}
+	}
+
+	&--orange {
+		@include opsbold;
+		background-color: $orange;
+		color: $grey;
+		padding: 20px 0;
+		font-size: $mystic;
+		min-width: 150px;
+		line-height: $mini;
+		&__long {
+			min-width: 190px;
+		}
+	}
+}
+@media (max-width:445px){
+	.btn--grey__h2long{
+		white-space: normal;
+		padding-left: 10px;
+		padding-right: 10px;
+		line-height: normal;
+		min-width: 100vw;
+	}
+	
+}

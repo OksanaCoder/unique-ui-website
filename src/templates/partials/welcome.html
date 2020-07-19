@@ -1,0 +1,49 @@
+<section class="welcome" id="welcome">
+	<div class="content_wrapper welcome--flex welcome--center">
+		<div class="welcome__content">
+			<h2 class="welcome__header animated fadeInDown">Unique-tech<br> app development</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.</p>
+			<a class="btn btn__welcome hov-outline">View More <i class="fas fa-paper-plane"></i></a>
+
+	</div>
+		<div class="slideshow-container">
+			<div class="mySlides fade">
+				<img src="images/laptop.png" class="welcome__img" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="images/tablet.png" class="welcome__img" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="images/iphones.png" class="welcome__img" style="width:100%">
+			</div>
+			<div style="text-align:center">
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
+			</div>
+		</div>
+		<div id="modal-container">
+  				<div class="modal-background">
+   				 <div class="modal">
+   					   <h2>I'm a Modal</h2>
+      					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, rem minus eveniet rerum hic consectetur fugiat dolorem temporibus autem impedit explicabo eius dolore libero, nihil. Inventore soluta ipsa repellendus, itaque.</p>
+     				 <svg class="modal-svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none">
+					<rect x="0" y="0" fill="none" width="226" height="162" rx="3" ry="3"></rect>
+					</svg>
+			    </div>
+			  </div>
+			</div>
+	</div>
+</section>
+<script type="text/javascript">
+	$('.btn__welcome').click(function(){
+	  var buttonId = $(this).attr('id');
+	  $('#modal-container').removeAttr('class').addClass('two');
+	  $('body').addClass('modal-active');
+	})
+
+	$('#modal-container').click(function(){
+	  $(this).addClass('out');
+	  $('body').removeClass('modal-active');
+	});
+</script>

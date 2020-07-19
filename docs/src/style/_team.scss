@@ -1,0 +1,118 @@
+.team {
+	&__margin {
+		margin-bottom: 140px;
+	}
+	&__container {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		padding: 61px 0 23px;
+		text-align: center;
+		background: $orange;
+		width: 100vw;
+	}
+	&__members:hover {
+
+		-webkit-animation: swing 1s ease;
+		animation: swing 1s ease;
+		-webkit-animation-iteration-count: 1;
+		animation-iteration-count: 1;
+		figcaption {
+			letter-spacing: 2px;
+			transition: all 1s ease;
+		}
+	}
+	img:hover {
+		// transform: scale(1.5);
+		box-shadow: inset 0 0 0 50px #53a7ea;
+	}
+	img {
+
+		transition: all 1s ease-in-out;
+	}
+
+	@keyframes swing {
+		15% {
+			-webkit-transform: translateX(5px);
+			transform: translateX(5px);
+		}
+		30% {
+			-webkit-transform: translateX(-5px);
+			transform: translateX(-5px);
+		}
+		50% {
+			-webkit-transform: translateX(3px);
+			transform: translateX(3px);
+		}
+		65% {
+			-webkit-transform: translateX(-3px);
+			transform: translateX(-3px);
+		}
+		80% {
+			-webkit-transform: translateX(2px);
+			transform: translateX(2px);
+		}
+		100% {
+			-webkit-transform: translateX(0);
+			transform: translateX(0);
+		}
+	}
+	&__members:not(:last-child) {
+		margin-right: 3.5vw;
+	}
+	figure img {
+		width: 130px;
+		height: 127px;
+		background: #ebebeb;
+		border-radius: 50%;
+		padding-top: 10px;
+	}
+	figcaption {
+		text-transform: uppercase;
+		color: $white;
+		p {
+			font-size: $medium;
+			@include robthin;
+		}
+		p:first-child {
+			@include robbol;
+			margin: 16px auto;
+		}
+	}
+}
+
+
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+	.team__members {
+		width: 50%;
+		margin-bottom: 50px;
+	}
+	.team__members:not(:last-child) {
+		margin-right: 0px;
+	}
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+	.team__members {
+		width: 33.3%;
+		margin-bottom: 50px;
+	}
+	.team__members:not(:last-child) {
+		margin-right: 0px;
+	}
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+	.team__members {
+		width: 33.3%;
+		margin-bottom: 50px;
+		margin-right: 0px;
+	}
+	.team__members:not(:last-child) {
+		margin-right: 0px;
+	}
+
+}

@@ -1,0 +1,206 @@
+.process{
+	.pc-show {
+		display: block;
+	}
+	.mobile-show {
+		display: none;
+	}
+	padding: 85px 0 110px 0;
+	background: $grad;
+	&__content{
+			background: url("../images/process/map.svg") no-repeat 50% 50%;
+			
+			height: 855px;
+		
+	}
+	&__container {
+		height: 100%;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		padding-top: 165px;
+	}
+	&__map {
+		width: 100%;
+		position: absolute;
+		img {
+			width: 100%;
+		}
+	}
+	&__row {
+		width: 100%;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 70px;
+		&:nth-child(3) {
+			left: 50px;
+		}
+		&:last-child {
+			width: 100%;
+			position: relative;
+			right: 5px;
+			justify-content: center;
+			margin-bottom: 0px;
+		}
+		
+	}
+	&__contactus {
+		position: absolute;
+		right: -10px;
+		bottom: -10px;
+		transform: translate(0%, 50%);
+	}
+	&__work {
+		position: relative;
+	}
+	&__list {
+		position: relative;
+	}
+	&__final {
+		position: relative;
+		left: 135px;
+	}
+	&__finish {
+		position: relative;
+		left: 135px;
+	}
+	&__line1 {
+		position: relative;
+		bottom: 70px;
+		margin-right: 10px;
+	}
+	&__line2 {
+		position: relative;
+		bottom: 13px;
+		margin-right: 10px;
+	}
+	&__line3 {
+		position: relative;
+		bottom: 30px;
+	}
+	&__line4 {
+		position: relative;
+		bottom: 65px;
+	}
+	&__line5 {
+		position: relative;
+		bottom: 25px;
+	}
+	&__line6 {
+		position: absolute;
+		top: -55px;
+		left: 0px;
+		right: 0px;
+		margin: auto;
+	}
+	&__line7 {
+		position: relative;
+		bottom: 43px;
+		transform: rotate(180deg);
+	}
+	&__line8 {
+		position: relative;
+		bottom: 45px;
+	}
+	&__line9 {
+		position: absolute;
+		bottom: -60px;
+		left: 0px;
+		right: 0px;
+		margin: auto;
+	}
+	&__line10 {
+		position: relative;
+		bottom: 50px;
+	}
+	// .process__final-svg, .process__finish-svg, .process__list-svg, .process__present-svg, .process__work-svg, .process__deal-svg, .process__wewill-svg, .process__people-svg, .process__contactus-svg, .process__tellus-svg, .process__idea-svg, .process__start-svg {
+	// 	opacity: 0;
+	// }
+	// .process__line1, .process__line2, .process__line3, .process__line4, .process__line5,.process__line6, .process__line7, .process__line8, .process__line9, .process__line10 {
+	// 	opacity: 0;
+	// }
+}
+
+.justify-center {
+	justify-content: center;
+}
+
+.space-evenly {
+	justify-content: space-evenly;
+}
+
+.mb-30 {
+	margin-bottom: 30px;
+}
+
+.mb-10 {
+	margin-bottom: 10px;
+}
+
+
+/* ANIMATION */
+
+.process {
+	&__final-svg {
+
+	}
+	&__finish-svg {
+
+	}
+	&__list-svg {
+
+	}
+	&__present-svg {
+
+	}
+	&__work-svg {
+
+	}
+	&__deal-svg {
+
+	}
+	&__wewill-svg {
+
+	}
+	&__people-svg {
+
+	}
+	&__contactus-svg {
+
+	}
+	&__tellus-svg {
+
+	}
+	&__idea-svg {
+
+	}
+	&__start-svg {
+		animation-name: start-svg;
+		animation-duration: 0.5s;
+		animation-fill-mode: forwards;
+	}
+}
+
+@keyframes start-svg {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@media (max-width: 576px) {
+	.process__map {
+		display: none;
+	}
+	.pc-show {
+		display: none !important;
+	}
+	.mobile-show {
+		display: block !important;
+		img {
+			width: 100%;
+		}
+	}	
+}
